@@ -1,0 +1,57 @@
+// app global css in SCSS form
+.button-logo {
+    color: rgb(248, 245, 245); /* Cambia el color del texto a rojo */
+    text-decoration: none; /* Quita la subrayado del enlace */
+    /* Agrega más reglas de estilo según tus necesidades */
+  }
+
+  .button-web {
+  background-color: rgb(80, 136, 80);
+  color: rgb(248, 245, 245);
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  padding: 15px 50px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+  .button-web:hover {
+    background-color: black;
+    color: white;
+  }
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Esto centra verticalmente en la página */
+  }
+  .avatar-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    height: auto; /* Establece la altura automáticamente según el contenido */
+    margin-top: 30px; /* Mueve el avatar hacia abajo */
+  }
+  .rotating-avatar {
+  animation: rotate 4s linear infinite; /* Agrega una animación llamada "rotate" */
+}
+
+.avatar-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: white;
+}
+
+@keyframes rotate {
+  /* Define la animación de rotación */
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg); /* Estado inicial */
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg); /* Estado final (una rotación completa) */
+  }
+}
